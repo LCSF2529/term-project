@@ -1,0 +1,152 @@
+/* ------------- Common Component ------------- */
+.full-page {
+  height: 100%;
+}
+
+.about-title {
+  font-size: 3rem;
+}
+
+.full-page-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-height {
+  height: 90vh;
+}
+
+.full-page-information .title {
+  /* font-size: 5rem; */
+  font-weight: 200;
+  color: var(--silver-white);
+  animation: 1s ease-in-out 0s 1 slideInFromLeft;
+}
+
+.full-page-information .description {
+  width: 80vw;
+}
+
+/* ---------- Media Query for bigger screens ----------- */
+@media only screen and (min-width: 1200px) {
+  .about-title {
+    font-size: 4vw;
+  }
+
+  .medium-font {
+      font-size: 2vw;
+  }
+
+  .full-page-information .title {
+    font-size: 4vw;
+  }
+}
+
+/* --------- Media Query for Tablets --------------- */
+@media only screen and (min-width: 770px) and (max-width: 1200px) {
+  .about-title {
+    font-size: 6rem;
+  }
+
+  .full-page-information .title {
+    font-size: 4rem;
+  }
+
+  .full-page-information .description {
+    font-size: 1rem;
+  }
+
+  .page-height {
+    height: 100%;
+    margin-bottom: 100px;
+  }
+
+  .medium-font {
+    font-size: 2.25rem;
+  }
+
+  .small-font {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* --------- Media Query for large Mobiles --------------- */
+@media only screen and (min-width: 600px) and (max-width: 769px) {
+
+  .full-page-information .title {
+    font-size: 4rem;
+  }
+
+  .about-title {
+    font-size: 6rem;
+  }
+
+  .full-page-information .description {
+    font-size: 1rem;
+  }
+
+  .page-height {
+    height: 100%;
+    margin-bottom: 100px;
+  }
+  .medium-font {
+    font-size: 2.25rem;
+}
+
+.small-font {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+  
+}
+
+/* --------- Media Query for Mobile Devices ---------------- */
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .full-page-information .title {
+    font-size: 2rem;
+  }
+
+  .full-page-information .description {
+    font-size: 1rem;
+    word-spacing:-2px;
+    text-align: justify;
+  }
+
+  .page-height {
+    height: 100%;
+    margin: 10vh 0;
+  }
+
+.medium-font {
+  font-size: 1.25rem;
+}
+
+.small-font {
+  font-size: 0.7rem;
+  display: block;
+  text-align: center;
+}
+}
+
+/* -------- Animation ----------- */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
