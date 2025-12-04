@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<!-- 
+    Name: Gabriel Roldan 
+    C0965649
+    Course: Web Development 
+    Product: Circular Saws
+-->
+<html lang="en">
+     <head>
+        <title>Contact | ForgeWorks Precision</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Adding Author and Description -->
+        <meta name="author" content="Gabriel Roldan">
+        <meta name="description" content="ForgeWorks Precision designs and manufactures high-performance cutting tools for builders, contractors, and hardware stores. Our focus is on creating simple, reliable, and safe cutting equipment that workers can depend on every day. With durable materials, powerful motors, and ergonomic designs, ForgeWorks Precision tools deliver clean, accurate cuts and long-lasting performance on every job site.">
+
+        <!-- Adding Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+        
+        <!-- Google Fonts: Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+    <body>
+        <nav>
+
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="company-logo" src="images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-wrapper hamburger-menu" onclick="hamburger()">
+                <div class="hamburger-menu" id="hamburger"">
+                    <div class="line-top"></div>
+                    <div class="line-center"></div>
+                    <div class="line-bottom"></div>
+                </div>
+            </div>
+            
+
+            <ul class="nav-container desktop-tablet" id="menu-items">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        
+        </nav>
+
+        <main class="contact-container" id="contact">
+            <div class="contact-info-container">
+                <h1 class="title contact-title">Have a Query?</h1>
+                <span class="subtitle about-title theme-yellow">we are here for you!</span>
+            </div>
+
+            <div class="form-container">
+                <form action="thankyou.html">
+                    <fieldset class="product-info">
+                        <fieldset class="model-container">
+                            <legend>Choose the Model</legend>
+                            <p class="form-description">Select the product model you have a query about.</p>
+
+                            <div class="model-selection-container">
+
+                                <div>
+                                    <label for="series">Series <span class="required">*</span></label>
+                                    <select name="series" id="series">
+                                        <option value="Sidewinder-Pro">Sidewinder Pro</option>
+                                        <option value="WormDrive-Elite">Worm-Drive Elite</option>
+                                        <option value="Hypoid-Max">Hypoid Max</option>
+                                        <option value="MiniCut-Series">Mini-Cut Series</option>
+                                        <option value="MetalForce-Series">MetalForce Series</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="productType">Product Type <span class="required">*</span></label>
+                                    <select name="product-type" id="productType">
+                                        <option value="Direct-Drive">Direct-Drive Saw</option>
+                                        <option value="Worm-Drive">Worm-Drive Saw</option>
+                                        <option value="Hypoid">Hypoid Saw</option>
+                                        <option value="Compact-Mini">Compact / Mini Saw</option>
+                                        <option value="Metal-Cutting">Metal-Cutting Saw</option>
+                                        <option value="Track-Saw">Track Saw</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset class="material-container" id="fw-material">
+                        <legend>Blade Material <span class="required">*</span></legend>
+
+                        <div>
+                            <input type="radio" name="material" id="carbide" value="carbide" checked>
+                            <label for="carbide">Carbide-Tipped</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="material" id="steel" value="steel">
+                            <label for="steel">High-Speed Steel (HSS)</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="material" id="diamond" value="diamond">
+                            <label for="diamond">Diamond Blade</label>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="interface-container" id="fw-interface">
+                        <legend>Control Type</legend>
+
+                        <div>
+                            <input type="checkbox" name="interface" id="safety-guard" value="safety-guard">
+                            <label for="safety-guard">Advanced Safety Guard</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="interface" id="laser-guide" value="laser-guide">
+                            <label for="laser-guide">Laser Cut Guide</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="interface" id="dust-control" value="dust-control">
+                            <label for="dust-control">Dust Control System</label>
+                        </div>
+                    </fieldset>
+
+    
+                    <fieldset class="user-info-container">
+                        <legend>Your Information</legend>
+
+                        <div class="customer-name">
+                            <div>
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+
+                            <div>
+                                <label for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-contact">
+                            <div>
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="emailID" required>
+                            </div>
+                            <div>
+                                <label for="phone">Phone <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                            </div>
+                        </div>
+                        
+                        <div class="customer-query">
+                            <div class="date-container">
+                                <label for="purchaseDate">Purchase Date <span class="required">*</span></label>
+                                <input type="date" name="purchaseDate" id="purchaseDate" required>
+                            </div>
+                        
+                            <div class="query-container">
+                                <label for="query">Query <span class="required">*</span></label>
+                                <textarea name="query" id="query" cols="10" rows="4" required></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+    
+                    <div class="button-container">
+                        <button class="submit-button" type="submit">Submit</button>
+                        <button class="reset-button" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                ForgeWorks Precision <br/>
+                Gabriel Roldan C0965649 <br/>
+                &copy; Copyright 2025. All Rights Reserved <br/>
+                <a href="mailto:forgeworksprecision@info.com">Request Information</a> <br/>
+                
+            </p>
+        </footer>
+        
+        <!-- Adding Scripts -->
+        <script src="script/script.js"></script>
+    </body>
+</html>
