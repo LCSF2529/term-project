@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<!-- 
+    Name: Gabriel Roldan 
+    C0965649
+    Course: Web Development 
+    Product: Circular Saws
+-->
+<html lang="en">
+    <head>
+        <title>Specials | ForgeWorks Precision</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Adding Author and Description -->
+        <meta name="author" content="Gabriel Roldan">
+        <meta name="description" content="ForgeWorks Precision designs and manufactures high-performance cutting tools for builders, contractors, and hardware stores. Our focus is on creating simple, reliable, and safe cutting equipment that workers can depend on every day. With durable materials, powerful motors, and ergonomic designs, ForgeWorks Precision tools deliver clean, accurate cuts and long-lasting performance on every job site.">
+
+        <!-- Adding Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+
+        
+        <!-- Google Fonts: Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/specials.css">
+    </head>
+    <body>
+        <nav>
+
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="company-logo" src="images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-wrapper hamburger-menu" onclick="hamburger()">
+                <div class="hamburger-menu" id="hamburger"">
+                    <div class="line-top"></div>
+                    <div class="line-center"></div>
+                    <div class="line-bottom"></div>
+                </div>
+            </div>
+            
+
+            <ul class="nav-container desktop-tablet" id="menu-items">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html" class="active">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        
+        </nav>
+
+        <header>
+            <!-- Image Banner -->
+            <img src="images/specials_banner.jpg" alt="Cutting Tool Banner" class="specials-banner">
+        </header>
+
+        <main class="special-container" id="special">
+
+            <div class="weekly-product theme-white">
+                <div class="specials-heading-container">
+                    <h2 class="specials-heading">Product of the week</h2>
+                </div>
+
+                <div class="weekly-product-container">
+                    <img class="weekly-product-image" src="images/specials/special-banner.png" alt="Compact Mini Circular Saw">
+                    <div class="image-background"></div>
+                    <div class="description-container">
+                    </div>
+                </div>
+            </div>
+
+            <div class="weekly-sales theme-white">
+                <div class="specials-heading-container">
+                    <h2 class="specials-heading">Specials Week Sales</h2>
+                </div>
+                <div class="weekly-sales-container">
+                    <div class="sales-container">
+                        <img class="item-image" src="images/specials/compact-mini.png" alt="Compact Mini Circular Saw">
+                        <h6 class="item-title about-title weekly-sales-font theme-yellow">Compact Mini Circular Saw</h6>
+                        <p class="item-description">The Mini-Cut Series packs precision power into a lightweight frame, designed for one-handed control and seamless maneuverability in tight workspaces.</p>
+                    </div>
+
+                    <div class="sales-container">
+                        <img class="item-image" src="images/specials/Hypoid.png" alt="Hypoid Circular Saw">
+                        <h6 class="item-title about-title weekly-sales-font theme-yellow">Hypoid Circular Saw</h6>
+                        <p class="item-description">The Hypoid Max Series integrates advanced hypoid gearing for ultra-smooth rotation, reduced noise, and superior cutting strength across heavy-duty applications.</p>
+                    </div>
+
+                    <div class="sales-container">
+                        <img class="item-image" src="images/specials/metal-cutting.png" alt="Metal-Cutting Circular Saw">
+                        <h6 class="item-title about-title weekly-sales-font theme-yellow">Metal-Cutting Circular Saw</h6>
+                        <p class="item-description">The MetalForce Series is equipped with a reinforced blade housing and controlled RPM technology, built to slice through steel and aluminum with minimal sparks and maximum stability.</p>
+                    </div>
+
+                    <div class="sales-container">
+                        <img class="item-image" src="images/specials/sidewinder.png" alt="Sidewinder Circular Saw">
+                        <h6 class="item-title about-title weekly-sales-font theme-yellow">Sidewinder Circular Saw</h6>
+                        <p class="item-description">The Sidewinder Series features a high-speed direct-drive motor engineered for clean, razor-sharp cuts with every pass.</p>
+                    </div>
+
+                    <div class="sales-container">
+                        <img class="item-image" src="images/specials/track-saw.png" alt="Track Saw">
+                        <h6 class="item-title about-title weekly-sales-font theme-yellow">Track Saw</h6>
+                        <p class="item-description">The Track Glide Series uses a guided plunge system to achieve flawless straight cuts and panel-ready accuracy with every glide along its rail.</p>
+                    </div>
+
+                    <div class="sales-container">
+                        <img class="item-image" src="images/specials/worm-drive.png" alt="Worm-Drive Circular Saw">
+                        <h6 class="item-title about-title weekly-sales-font theme-yellow">Worm-Drive Circular Saw</h6>
+                        <p class="item-description">The Worm-Drive Pro Series delivers exceptional torque with rear-mounted power gearing, giving you effortless performance through thick, dense materials.
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                ForgeWorks Precision <br/>
+                Gabriel Roldan C0965649 <br/>
+                &copy; Copyright 2025. All Rights Reserved <br/>
+                <a href="mailto:forgeworksprecision@info.com">Request Information</a> <br/>
+                
+            </p>
+        </footer>
+
+        <script src="script/script.js"></script>
+    </body>
+</html>

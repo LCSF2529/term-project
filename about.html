@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<!-- 
+    Name: Gabriel Roldan 
+    C0965649
+    Course: Web Development 
+    Product: Circular Saws
+-->
+<html lang="en">
+    <head>
+        <title>About | ForgeWorks Precision</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Adding Author and Description -->
+        <meta name="author" content="Gabriel Roldan">
+        <meta name="description" content="ForgeWorks Precision designs and manufactures high-performance cutting tools for builders, contractors, and hardware stores. Our focus is on creating simple, reliable, and safe cutting equipment that workers can depend on every day. With durable materials, powerful motors, and ergonomic designs, ForgeWorks Precision tools deliver clean, accurate cuts and long-lasting performance on every job site.">
+
+        <!-- Adding Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+        
+        <!-- Google Fonts: Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/about.css">
+    </head>
+    <body>
+
+        <nav>
+
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="company-logo" src="images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-wrapper hamburger-menu" onclick="hamburger()">
+                <div class="hamburger-menu" id="hamburger"">
+                    <div class="line-top"></div>
+                    <div class="line-center"></div>
+                    <div class="line-bottom"></div>
+                </div>
+            </div>
+            
+
+            <ul class="nav-container desktop-tablet" id="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        
+        </nav>
+
+        <main class="about-container" id="about">
+            <div class="full-page-information page-height">
+                <h1 class="title">About <span class="about-title theme-yellow">ForgeWorks Precision</span> <span></span></h1>
+                <br/>
+                <p class="description">
+                    ForgeWorks Precision, founded in 2024 and headquartered in the city of Sarnia, Ontario, is dedicated to transforming the cutting-tool industry. 
+                    Our mission is to deliver reliable, high-quality cutting equipment designed for builders, contractors, and hardware professionals. 
+                    The ForgeWorks Precision lineup combines advanced engineering with durable materials to ensure accuracy, safety, and long-lasting performance. 
+                    Discover the future of professional cutting tools with ForgeWorks Precision.
+                </p>
+
+            </div>
+
+            <!-- Our Story -->
+            <div class="full-page-information page-height">
+                <h2 class="title">Inception of <span class="about-title theme-yellow">ForgeWorks Precision</span></h2>
+                <br/>
+                <p class="description">
+                    In 2024, in the innovative city of Sarnia, Ontario, a team of engineers, builders, and design specialists 
+                    set out to redefine the standards of professional cutting tools. Months of dedicated development led to the 
+                    creation of the first ForgeWorks Precision series—compact, durable cutting tools built with advanced engineering 
+                    and user-focused design.
+                </p> <br/>
+                <p class="description">
+                    Following the success of the initial series, ForgeWorks Precision expanded its lineup with new generations of 
+                    high-performance tools, integrating upgraded materials, enhanced safety features, and modern ergonomic interfaces. 
+                    <br/><br/>
+                    <span>This evolution positioned ForgeWorks Precision not just as a company, but as a movement in the cutting-tool industry.</span>
+                </p>
+            </div>
+
+
+            <!-- Six Reasons -->
+            <div class="full-page-information page-height">
+                <h2 class="title">Why  <span class="about-title theme-yellow">ForgeWorks Precision</span></h2>
+                <br/>
+                <p class="description">What makes ForgeWorks Precision the trusted choice for high-performance cutting tools</p>
+                <ol class="description about-reasons-list" type="1">
+                    <li>
+                        Advanced Engineering <br/>
+                        <span>ForgeWorks Precision tools are built with advanced engineering to deliver strong, accurate, and reliable cutting performance.</span>
+                    </li>
+                    <li>
+                        User-Focused Design <br/>
+                        <span>Our cutting tools feature ergonomic, easy-to-handle designs that improve comfort and control for professionals at all skill levels.</span>
+                    </li>
+                    <li>
+                        Durable Construction <br/>
+                        <span>ForgeWorks Precision products are made with high-quality materials that ensure long-lasting durability, even under heavy daily use.</span>
+                    </li>
+                    <li>
+                        Safety Features <br/>
+                        <span>We prioritize safety with reinforced housings, stable grips, and protective components designed to reduce risks on the job site.</span>
+                    </li>
+                    <li>
+                        Compact & Practical <br/>
+                        <span>Our tools are engineered to be compact and efficient, offering powerful performance without taking up excess space.</span>
+                    </li>
+                    <li>
+                        Warranty Coverage <br/>
+                        <span>ForgeWorks Precision stands behind every product with solid warranty coverage, giving customers added confidence and support.</span>
+                    </li>
+
+                </ol>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>
+                ForgeWorks Precision <br/>
+                Gabriel Roldan C0965649 <br/>
+                &copy; Copyright 2025. All Rights Reserved <br/>
+                <a href="mailto:forgeworksprecision@info.com">Request Information</a> <br/>
+                
+            </p>
+        </footer>
+        
+        <!-- Adding Scripts -->
+        <script src="script/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<!-- 
+    Name: Gabriel Roldan 
+    C0965649
+    Course: Web Development
+    Product: Circular Saws
+-->
+<html lang="en">
+    <head>
+        <title>Home | ForgeWorks Precision</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Adding Author and Description -->
+        <meta name="author" content="Gabriel Roldan">
+        <meta name="description" content="ForgeWorks Precision designs and manufactures high-performance cutting tools for builders, contractors, and hardware stores. Our focus is on creating simple, reliable, and safe cutting equipment that workers can depend on every day. With durable materials, powerful motors, and ergonomic designs, ForgeWorks Precision tools deliver clean, accurate cuts and long-lasting performance on every job site.">
+
+        <!-- Adding Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+        
+        <!-- Google Fonts: Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/training.css">
+    </head>
+
+<body>
+        <nav>
+
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="company-logo" src="images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-wrapper hamburger-menu" onclick="hamburger()">
+                <div class="hamburger-menu" id="hamburger"">
+                    <div class="line-top"></div>
+                    <div class="line-center"></div>
+                    <div class="line-bottom"></div>
+                </div>
+            </div>
+            
+
+            <ul class="nav-container desktop-tablet" id="menu-items">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html" class="active">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        
+        </nav>
+
+    <main class="training-container" id="training">
+        <div class="video-banner" class="video-banner">
+            <video src="media/video-banner.mp4" autoplay muted loop>
+                Video Does not work in your browser!
+            </video>
+            <div class="full-page-information overlay">
+                <h1 id="training-title" class="title">
+                    Circular Saw Masterclass!
+                </h1>
+                <span class="about-title theme-yellow medium-font">
+                    Elevate Your Craft With Professional Cutting Training
+                </span>
+                <br />
+                <p class="description">
+                    Welcome to our Circular Saw Masterclass! In these focused sessions, you'll learn essential techniques for safe,
+                    precise, and efficient cutting using ForgeWorks Precision tools. From mastering blade selection to optimizing
+                    handling and control, our training will help you unlock the full potential of our high-performance saws.
+                    Let's elevate your skills and bring greater accuracy and confidence to every project.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="table-container" id="schedule">
+            <table class="training-table">
+                <caption>Product Training Schedule</caption>
+                <tr>
+                    <th>Product</th>
+                    <th>Image</th>
+                    <th>Date</th>
+                    <th>Duration</th>
+                    <th>Cost of Training</th>
+                    <th>Training Link</th>
+                </tr>
+
+                <!-- Row 1 -->
+                <tr>
+                    <td>SideWinder Circular Saw</td>
+                    <td class="image-container"><img src="images/specials/sidewinder.png" alt="SideWinder"></td>
+                    <td>December 10, 2025</td>
+                    <td>10:00 AM - 12:00 PM EST</td>
+                    <td>CAD $500</td>
+                    <td><a href="#">Video Conference</a></td>
+                </tr>
+
+                <!-- Row 2 -->
+                <tr>
+                    <td>Worm-Drive Circular Saw</td>
+                    <td class="image-container"><img src="images/specials/worm-drive.png" alt="Worn-Drive"></td>
+                    <td>December 15, 2025</td>
+                    <td>11:00 AM - 12:00 PM EST</td>
+                    <td>CAD $500</td>
+                    <td><a href="#">Video Conference</a></td>
+                </tr>
+
+                <!-- Row 3 -->
+                <tr>
+                    <td>Hypoid Circular Saw</td>
+                    <td class="image-container"><img src="images/specials/Hypoid.png" alt="Hypoid"></td>
+                    <td>January 6, 2026</td>
+                    <td>10:00 AM - 12:00 PM EST</td>
+                    <td>CAD $500</td>
+                    <td><a href="#">Video Conference</a></td>
+                </tr>
+
+                <!-- Row 4 -->
+                <tr>
+                    <td>Compact Mini Circular Saw</td>
+                    <td class="image-container"><img src="images/specials/compact-mini.png" alt="Compact Mini"></td>
+                    <td>January 12, 2026</td>
+                    <td>11:00 AM - 12:00 PM EST</td>
+                    <td>CAD $500</td>
+                    <td><a href="#">Video Conference</a></td>
+                </tr>
+
+                <!-- Row 5 -->
+                <tr>
+                    <td>Track Saw </td>
+                    <td class="image-container"><img src="images/specials/track-saw.png" alt="Track Saw"></td>
+                    <td>January 20, 2026</td>
+                    <td>10:00 AM - 12:00 PM EST</td>
+                    <td>CAD $500</td>
+                    <td><a href="#">Video Conference</a></td>
+                </tr>
+
+                <!-- Row 6 -->
+                <tr>
+                    <td>Metal-Cutting Circular Saw</td>
+                    <td class="image-container"><img src="images/specials/metal-cutting.png" alt="Metal-Cutting Circular Saw"></td>
+                    <td>January 26, 2026</td>
+                    <td>1:00 PM - 2:00 PM EST</td>
+                    <td>CAD $500</td>
+                    <td><a href="#">Video Conference</a></td>
+                </tr>
+
+                
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            ForgeWorks Precision <br/>
+            Gabriel Roldan C0965649 <br/>
+            &copy; Copyright 2025. All Rights Reserved <br/>
+            <a href="mailto:forgeworksprecision@info.com">Request Information</a> <br/>
+                
+        </p>
+    </footer>
+
+    <!-- Adding Scripts -->
+    <script src="script/script.js"></script>
+</body>
+
+</html>

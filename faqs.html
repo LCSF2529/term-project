@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- 
+    Name: Gabriel Roldan 
+    C0965649
+    Course: Web Development 
+    Product: Circular Saws
+-->
+<html lang="en">
+    <head>
+        <title>Home | ForgeWorks Precision</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Adding Author and Description -->
+        <meta name="author" content="Gabriel Roldan">
+        <meta name="description" content="ForgeWorks Precision designs and manufactures high-performance cutting tools for builders, contractors, and hardware stores. Our focus is on creating simple, reliable, and safe cutting equipment that workers can depend on every day. With durable materials, powerful motors, and ergonomic designs, ForgeWorks Precision tools deliver clean, accurate cuts and long-lasting performance on every job site.">
+
+        <!-- Adding Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+
+        
+        <!-- Google Fonts: Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/faqs.css">
+    </head>
+    <body>
+        <nav>
+
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="company-logo" src="images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-wrapper hamburger-menu" onclick="hamburger()">
+                <div class="hamburger-menu" id="hamburger"">
+                    <div class="line-top"></div>
+                    <div class="line-center"></div>
+                    <div class="line-bottom"></div>
+                </div>
+            </div>
+            
+
+            <ul class="nav-container desktop-tablet" id="menu-items">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="specials.html">Specials</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faqs.html" class="active">FAQS</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        
+        </nav>
+
+        <main class="faqs-section" id="faqs">
+
+            
+            <!-- Six Reasons -->
+            <div class="full-page-information page-height">
+                <h2 class="title" id="FAQS">FAQs</h2>
+                <br/>
+
+                <ol class="description about-reasons-list" type="A">
+                    <li>
+                        <div class="questionContainer">
+                            <h2 class="list-title">What is a circular saw?</h2>
+                            <p class="list-description">
+                                A circular saw is a power tool designed to make fast, accurate cuts through wood, metal, and other materials using a rotating blade.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="questionContainer">
+                            <h2 class="list-title">What types of materials can I cut with ForgeWorks saws?</h2>
+                            <p class="list-description">
+                                ForgeWorks Precision saws are engineered for versatility, allowing you to cut wood, metal, plastics, and engineered materials depending on the blade and model selected.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="questionContainer">
+                            <h2 class="list-title">Do ForgeWorks tools include built-in technology features?</h2>
+                            <p class="list-description">
+                                Yes, many of our models include advanced features such as laser guides, dust-control systems, and safety-enhanced blade guards for improved precision and control.
+                                <span>* Please check your product specifications to confirm available features.</span>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="questionContainer">
+                            <h2 class="list-title">Is there a warranty or return policy?</h2>
+                            <p class="list-description">
+                                Yes, all ForgeWorks Precision tools come with a warranty to ensure quality and reliability.
+                                <span>* For more details, please use our contact form to reach customer support. 
+                                    <a href="contact.html">query form</a>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+
+
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                ForgeWorks Precision <br/>
+                Gabriel Roldan C0965649 <br/>
+                &copy; Copyright 2025. All Rights Reserved <br/>
+                <a href="mailto:forgeworksprecision@info.com">Request Information</a> <br/>
+                
+            </p>
+        </footer>
+        
+        <!-- Adding Scripts -->
+        <script src="script/script.js"></script>
+    </body>
+</html>

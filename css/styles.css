@@ -1,0 +1,315 @@
+/*
+    Name: Gabriel Roldan 
+    C0965649
+    Course: Web Development (CSD310)
+    Product: Circular Saws
+*/
+
+@import url('theme.css');
+@import url('commoncomponets.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: var(--primary-font);
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.prevent-scroll {
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----- Styling the scrollbar ------ */
+body::-webkit-scrollbar {
+    width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--gold);
+    outline: 0.5px solid var(--gold);
+}
+
+/* To set the footer to the bottom, body = flex */
+main {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--silver-white);
+    ;
+}
+
+p {
+    color: var(--silver-white);
+    ;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.25vw;
+}
+
+/*------- COLOR THEMES  ------- */
+.theme-yellow {
+    /* color: var(--gold); */
+    color: var(--gold);
+}
+
+.theme-white {
+    color: var(--silver-white);
+}
+
+/* ------- FONT SIZES ------- */
+.large-font {
+    font-size: 5vw;
+}
+
+.medium-font {
+    font-size: 2vw;
+}
+
+.small-font {
+    font-size: 1vw;
+}
+
+/* -------- Display -------- */
+.mobile {
+    display: none;
+}
+
+
+/*  -------  Navigation Styling  -------  */
+.hamburger-menu {
+    display: none;
+}
+
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    z-index: 999;
+    top: 0;
+}
+
+.nav-container {
+    margin-right: 1.5vw;
+}
+
+
+.nav-container ul {
+    list-style: none;
+}
+
+.nav-container li {
+    color: #fff;
+    margin: 1.5vw;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav-container li a {
+    font-size: 1.3vw;
+}
+
+.nav-container li .active {
+    color: var(--gold);
+}
+
+.nav-container li .active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.104vw;
+    background-color: var(--gold);
+}
+
+.nav-container li a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 0.104vw;
+    background-color: var(--gold);
+}
+
+.nav-container li a:hover:after {
+    width: 100%;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-container li a:hover {
+    color: var(--gold);
+    transition: all 0.4s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  ------- Landing Page Styles ------- */
+.landing-page {
+    height: 100vh;
+}
+
+.company-logo {
+    padding-top: 12px;
+    width: 15vw;
+}
+
+.logo-container {
+    margin-left: 7.30vw;
+}
+
+
+.company-banner-container {
+    margin: 1.667vw 0;
+}
+
+.company-banner {
+    width: 100%;
+}
+
+/* ------ Beginning of Footer Style ------- */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: var(--silver-white);
+    font-size: 0.8rem;
+    padding: 2rem 0;
+}
+
+/* Mobile & tablet View Ranging from 0 to (600px) 820px*/
+@media only screen and (max-width: 1200px) {
+
+    .company-banner {
+        width: 80%;
+    }
+
+    nav li a {
+        color: #000;
+    }
+
+
+    /* ----- Beginning of Hamburger Menu ----- */
+    .hamburger-menu {
+        display: block;
+        width: 50px;
+        height: 30px;
+        margin-right: 7.3vw;
+        z-index: 1100;
+    }
+
+    .hamburger-menu:hover {
+        cursor: pointer;
+    }
+
+    .hamburger-menu:hover .line-top,
+    .hamburger-menu:hover .line-bottom {
+        background-color: var(--gold);
+    }
+
+    .hamburger-menu:hover .line-center {
+        background-color: var(--gold);
+    }
+
+    .hamburger-menu .line-top,
+    .hamburger-menu .line-center,
+    .hamburger-menu .line-bottom {
+        width: 100%;
+        height: 8px;
+        margin: 4px 0;
+        border-radius: 20px;
+        background-color: var(--gold);
+        transition: all 0.15s ease-in;
+    }
+
+    .hamburger-menu .line-center {
+        transition-delay: 0.1s;
+    }
+
+    .hamburger-menu .line-bottom {
+        transition-delay: 0.15s;
+    }
+
+    .close-button div:nth-child(1) {
+        transform: translateY(12px) rotate(45deg);
+    }
+
+    .close-button div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .close-button div:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+
+    /* ----- End of Hamburger Menu ----- */
+
+
+    /* ------- Beginning of Navigation menu items ----- */
+    .mobile-menu-options {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        top: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobile-menu-options li a {
+        font-size: 4vh;
+    }
+
+    .mobile-menu-options li {
+        margin: 1vh 0;
+    }
+
+    /* ------- End of Navigation menu items ----- */
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop-tablet {
+        display: none;
+    }
+
+    .company-logo {
+        width: 30%;
+        margin: 0.5em;
+        position: relative;
+        z-index: 999;
+    }
+
+    .welcome-message {
+        font-size: 1em;
+    }
+}
